@@ -1,8 +1,6 @@
 package counter
 
 import (
-    "errors"
-    "fmt"
     "github.com/looplab/eventhorizon"
 )
 type CounterInitialHandler struct {
