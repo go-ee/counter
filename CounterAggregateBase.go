@@ -169,7 +169,7 @@ func (o *CounterEventHandler) SetupEventHandler() (err error) {
     //default handler implementation
     o.IncrementedHandler = func(event *CounterIncremented, entity *Counter) (err error) {
         if err = eh.ValidateIdsMatch(entity.Id, event.Id, CounterAggregateType); err == nil {
-            entity.Count = ee.lang.Attribute@327b636c
+            entity.Count = ee.lang.Attribute@3745e5c6
         }
         return
     }
