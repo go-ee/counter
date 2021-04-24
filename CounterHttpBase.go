@@ -65,7 +65,7 @@ type CounterHttpCommandHandler struct {
 }
 
 func NewCounterHttpCommandHandler(context context.Context, commandBus eventhorizon.CommandHandler) (ret *CounterHttpCommandHandler) {
-    httpCommandHandler := eh.NewHttpCommandHandler(context, commandBus)
+    httpCommandHandler := eh.NewHttpCommandHandlerFull(context, commandBus)
     ret = &CounterHttpCommandHandler{
         HttpCommandHandler: httpCommandHandler,
     }
